@@ -1,0 +1,43 @@
+package Assignments;
+
+import java.util.Arrays;
+
+public class DeleteArrayElement {
+
+	public static void main(String[] args) {
+		
+		
+		// delete array element
+		
+		int p[] = {1,4,5,2,3,22,31,2};
+		
+		int q[] = new int[p.length - 1];
+		
+		int count = 0;
+		
+		for(int e : p) {
+			if(!(e == 22)) {
+				q[count] = e;
+				count++;
+			}
+		}
+		
+		System.out.println(Arrays.toString(q));
+
+		
+		
+		//copying array element from one array to another
+		
+		int a[] = {5,6,1,4,7,3,9};
+		int b[] = new int[a.length];
+		int c = 0;
+		
+		for(int e : a) {
+			b[c] = e;
+			c++;
+		}
+		System.out.println(Arrays.toString(b));
+	
+	}
+
+}
